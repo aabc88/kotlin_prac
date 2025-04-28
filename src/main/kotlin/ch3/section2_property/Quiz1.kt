@@ -22,15 +22,10 @@ class QuizUser {
                 throw IllegalArgumentException("8자 이상의 패스워드가 필요합니다.")
         }
 
-    val isAdult: Boolean
-        get() = age >= 18
-
-    val fullName: String
-        get() = "$firstName $lastName"
-
     fun isAdult(): Boolean {
         return age >= 18
     }
+
     fun getFullName(): String {
         return "$firstName $lastName"
     }
