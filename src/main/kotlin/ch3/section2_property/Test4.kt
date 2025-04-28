@@ -2,10 +2,7 @@ package org.example.ch3.section2_property
 
 //by - 예약어
 //뭔가의 행위를 위임시킬 때 쓰는 예약어 delegation pattern 구현을 도와주기 위해 만든 예약어
-val data1: String by lazy {
-    println("data1 init")
-    "hello"
-}
+
 
 class User1{
     val name: String by lazy {
