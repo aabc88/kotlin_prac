@@ -23,4 +23,5 @@ fun main() {
     }
 
     hofFun(fun(x: Int): Int = x * 10)
+
 }
