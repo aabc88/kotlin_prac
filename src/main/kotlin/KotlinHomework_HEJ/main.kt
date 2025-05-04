@@ -1,7 +1,13 @@
 package org.example.KotlinHomework_HEJ
 
-fun main() {
-    val user = User("홍길동", "010-1234-5678", MembershipLevel.VIP)
+import org.example.KotlinHomework_HEJ.status.MembershipLevel
+import org.example.KotlinHomework_HEJ.status.OrderStatus
+import org.example.KotlinHomework_HEJ.status.PaymentMethod
 
-    println(user.membershipLevel.getDescription())
+fun main() {
+    val user = User("홍길동", "010-1234-5678", MembershipLevel.GOLD)
+    val product = Product("스마트폰", 850000.0)
+    val order = Order(user, product, PaymentMethod.CREDIT_CARD, OrderStatus.PAID)
+
+    order.printOrderDetails()
 }
